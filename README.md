@@ -7,9 +7,11 @@ Our project aims to utilize VMD to visualize thermal equilibrium in molecular dy
   <img src="images/equilibrium.png" alt="Example Image" width="300">
 </div>
 
+---
 ### Methodology
 
-
+---
 ### Results
 
+---
 ### References
