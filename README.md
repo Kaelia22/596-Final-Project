@@ -4,8 +4,8 @@
 Our project leverages VMD visualization software to simulate thermal equilibrium through a dynamic, color-coded representation of molecules. Molecules are color-coded based on their kinetic energy, with higher temperatures corresponding to warmer colors and lower temperatures to cooler ones. By placing molecules with significantly different temperatures in the same simulation box, the system visually demonstrates how they exchange energy and gradually reach thermal equilibrium. 
 
 ### Motivation
-1. help visualize abstract thermodynamic principles in a way that’s intuitive and memorable. Concepts like thermal equilibrium can often feel theoretical, but our project brings them to life.
-2. visualizations make scientific learning engaging and accessible.
+1. Help visualize abstract thermodynamic principles in a way that’s intuitive and memorable. Concepts like thermal equilibrium can often feel theoretical, but our project brings them to life.
+2. Visualizations make scientific learning engaging and accessible.
 
 <div align="center">
   <img src="images/equilibrium.png" alt="Example Image" width="300">
