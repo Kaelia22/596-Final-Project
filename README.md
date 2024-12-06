@@ -8,10 +8,14 @@ Our project aims to utilize VMD to visualize thermal equilibrium in molecular dy
 </div>
 
 ---
-### Methodology
+### Challenges
+1. Were able to simulate thermal equilibrium through movement of atoms in a box but unable to add colors using xyz file
+2. Pivoted to pmd file and were able to get colors to show up but kinetic energy wasn't being properly read
+3. Figured out that VMD is very sensitive to spacing in pmd files and therefore it wasn't reading the correct values
+4. Able to fix spacing through trail and error but now we realized that our script wasn't correctly simulating the change in kinetic energy- only the change in atom position
 
 ---
-### Results
+### Expected Results
 
 ---
 ### References
