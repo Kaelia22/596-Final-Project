@@ -21,7 +21,7 @@ Our project leverages VMD visualization software to simulate thermal equilibrium
    <div align="center">
       <img src="beta_column_not_read.png" alt="step1 Image" width="600">
    </div>
-3. Figured out that VMD is very sensitive to spacing in pmd files and therefore it wasn't reading the correct values. We corrected the formatting and then it read the correct values:
+3. Figured out that the formatting of the pdb file wasn't aligning with our .tcl file and therefore it wasn't reading the correct values. We corrected the formatting and then it read the correct values:
    <div align="center">
       <img src="beta_column_read.png" alt="step1 Image" width="600">
    </div>
