@@ -1,7 +1,7 @@
 ## CSCI Final Project: Visualizing Thermal Equilibrium
 
 ### Project Objective
-Our project aims to utilize VMD to visualize thermal equilibrium in molecular dynamics simulations by color-coding atoms based on their kinetic energy. The system provides a dynamic enviornment to observe the process of temperature equilibration after initially assigning distinct high temperatures to one side of a MD simulation box and low temperatures to the other side. The color-coded represenation allows users to intuitively track the distrubution and flow of energy across the system over time. Our approach facilitates a deeper understanding of thermal equilibrium while simultaneously providing a visually engaging method for analyzing energy exchanges in MD simulations.
+Our project leverages VMD visualization software to simulate thermal equilibrium through a dynamic, color-coded representation of molecules. Molecules are color-coded based on their kinetic energy, with higher temperatures corresponding to warmer colors and lower temperatures to cooler ones. By placing molecules with significantly different temperatures in the same simulation box, the system visually demonstrates how they exchange energy and gradually reach thermal equilibrium. This approach allows us to intuitively observe temperature changes in real-time, making the process of energy flow and distribution both accessible and engaging.
 
 ### Motivation
 1. help visualize abstract thermodynamic principles in a way that’s intuitive and memorable. Concepts like thermal equilibrium can often feel theoretical, but our project brings them to life.
