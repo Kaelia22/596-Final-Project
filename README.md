@@ -27,11 +27,17 @@ Our project leverages VMD visualization software to simulate thermal equilibrium
    </div>
 4. Able to fix spacing through trail and error but now we realized that our script wasn't correctly simulating the change in kinetic energy- only the change in atom position. As seen below, Atom 1's position is changing with timestep, but it's KE is not.
    <div align="center">
+      <img src="colored_atoms.png" alt="step1 Image" width="600">
+   </div>
+   
+   <div align="center">
       <img src="atom1_0.png" alt="step1 Image" width="600">
    </div>
+   
    <div align="center">
       <img src="atom1_512.png" alt="step1 Image" width="600">
    </div>
+   
    <div align="center">
       <img src="atom1_999.png" alt="step1 Image" width="600">
    </div>
