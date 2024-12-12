@@ -86,7 +86,7 @@ int main() {
     Atom atoms[N];
     initialize_atoms(atoms);
 
-    FILE *pdb_file = fopen("output6.pdb", "w");
+    FILE *pdb_file = fopen("output.pdb", "w");
     if (!pdb_file) {
         perror("Error creating PDB file");
         return 1;
@@ -99,6 +99,6 @@ int main() {
 
     fclose(pdb_file);
 
-    printf("PDB file created successfully: output6.pdb\n");
+    printf("PDB file created successfully: output.pdb\n");
     return 0;
 }
