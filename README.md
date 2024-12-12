@@ -15,31 +15,31 @@ Our project leverages VMD visualization software to simulate thermal equilibrium
 ### Challenges
 1. Were able to simulate thermal equilibrium through movement of atoms in a box but unable to add colors using xyz file. Our result looked like this:
    <div align="center">
-      <img src="step1_no_color_change.png" alt="step1 Image" width="300">
+      <img src="images/step1_no_color_change.png" alt="step1 Image" width="300">
    </div>
 2. Pivoted to pmd file and figured out which coloring method to use to get colors to show up but realized kinetic energy values weren't being properly read
    <div align="center">
-      <img src="beta_column_not_read.png" alt="step1 Image" width="600">
+      <img src="images/beta_column_not_read.png" alt="step1 Image" width="600">
    </div>
 3. Figured out that the formatting of the pdb file wasn't aligning with our .tcl file and therefore it wasn't reading the correct values. We corrected the formatting and then it read the correct values:
    <div align="center">
-      <img src="beta_column_read.png" alt="step1 Image" width="600">
+      <img src="images/beta_column_read.png" alt="step1 Image" width="600">
    </div>
 4. Able to fix spacing through trail and error but now we realized that our script wasn't correctly simulating the change in kinetic energy- only the change in atom position. As seen below, Atom 1's position is changing with timestep, but it's KE is not.
    <div align="center">
-      <img src="colored_atoms.png" alt="step1 Image" width="600">
+      <img src="images/colored_atoms.png" alt="step1 Image" width="600">
    </div>
    
    <div align="center">
-      <img src="atom1_0.png" alt="step1 Image" width="600">
+      <img src="images/atom1_0.png" alt="step1 Image" width="600">
    </div>
    
    <div align="center">
-      <img src="atom1_512.png" alt="step1 Image" width="600">
+      <img src="images/atom1_512.png" alt="step1 Image" width="600">
    </div>
    
    <div align="center">
-      <img src="atom1_999.png" alt="step1 Image" width="600">
+      <img src="images/atom1_999.png" alt="step1 Image" width="600">
    </div>
 
 ---
