@@ -1,12 +1,12 @@
 # Load the PDB file
-mol new output6.pdb waitfor all
+mol new output.pdb waitfor all
 
 # Select all atoms
 set all [atomselect top all]
 
 # Read the occupancy values
 set frame 0
-set in [open "output6.pdb" r]
+set in [open "output.pdb" r]
 set occ {}
 while { [gets $in line] != -1 } {
     switch -- [string range $line 0 3] {
