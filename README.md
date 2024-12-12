@@ -12,7 +12,7 @@ Our project leverages VMD visualization software to simulate thermal equilibrium
 </div>
 
 ---
-### Challenges
+### Challenges/Things we learned along the way
 1. Were able to simulate thermal equilibrium through movement of atoms in a box but unable to add colors using xyz file. Our result looked like this:
    <div align="center">
       <img src="images/step1_no_color_change.png" alt="step1 Image" width="300">
