@@ -1,69 +1,78 @@
-## CSCI Final Project: Visualizing Thermal Equilibrium
+# **CSCI Final Project: Visualizing Thermal Equilibrium**
 
-### Project Objective
-Our project leverages VMD visualization software to simulate thermal equilibrium through a dynamic, color-coded representation of molecules. Molecules are color-coded based on their kinetic energy, with higher temperatures corresponding to warmer colors and lower temperatures to cooler ones. By placing molecules with significantly different temperatures in the same simulation box, the system visually demonstrates how they exchange energy and gradually reach thermal equilibrium. 
+## **Project Objective**
+Our project utilizes VMD (Visual Molecular Dynamics) software to simulate and visualize thermal equilibrium. Through a dynamic, color-coded representation of molecules, we illustrate how kinetic energy drives energy exchange within a system. Molecules are assigned colors corresponding to their kinetic energy—warmer colors (e.g., red) represent higher temperatures, while cooler colors (e.g., blue) represent lower temperatures. By placing molecules with distinct initial temperatures in the same simulation box, we visually demonstrate the process of energy exchange leading to thermal equilibrium.
 
-### Motivation
-1. Help visualize abstract thermodynamic principles in a way that’s intuitive and memorable. Concepts like thermal equilibrium can often feel theoretical, but our project brings them to life.
-2. Visualizations make scientific learning engaging and accessible.
+---
+
+## **Motivation**
+1. **Making Thermodynamics Tangible**: Thermodynamic principles like thermal equilibrium often seem abstract and theoretical. Our visualization bridges this gap by offering an intuitive and engaging representation of these concepts in action.
+2. **Enhancing Learning**: Visual representations make scientific concepts more accessible, helping students and researchers alike deepen their understanding through interactive learning.
 
 <div align="center">
-  <img src="images/equilibrium.png" alt="Example Image" width="300">
+  <img src="images/equilibrium.png" alt="Example Visualization of Thermal Equilibrium" width="300">
 </div>
 
 ---
-### Challenges/Things we learned throughout this project
-1. Were able to simulate thermal equilibrium through movement of atoms in a box but unable to add colors using xyz file. Our result looked like this:
-   <div align="center">
-      <img src="images/step1_no_color_change.png" alt="step1 Image" width="300">
-   </div>
-2. Pivoted to pmd file and figured out which coloring method to use to get colors to show up but realized kinetic energy values weren't being properly read
-   <div align="center">
-      <img src="images/beta_column_not_read.png" alt="step1 Image" width="600">
-   </div>
-3. Figured out that the formatting of the pdb file wasn't aligning with our .tcl file and therefore it wasn't reading the correct values. We corrected the formatting and then it read the correct values:
-   <div align="center">
-      <img src="images/beta_column_read.png" alt="step1 Image" width="600">
-   </div>
-4. Able to fix spacing through trail and error but now we realized that our script wasn't correctly simulating the change in kinetic energy- only the change in atom position. As seen below, Atom 1's position is changing with timestep, but it's KE is not.
-   <div align="center">
-      <img src="images/colored_atoms.png" alt="step1 Image" width="600">
-   </div>
-   
-   <div align="center">
-      <img src="images/atom1_0.png" alt="step1 Image" width="600">
-   </div>
-   
-   <div align="center">
-      <img src="images/atom1_512.png" alt="step1 Image" width="600">
-   </div>
-   
-   <div align="center">
-      <img src="images/atom1_999.png" alt="step1 Image" width="600">
-   </div>
-5. Fixed thermal_d.c to generate output.xyz where KE of atoms is changing. The colors in VMD, however, are still not changing.
 
-   Added exchange_energy function to thermal_md:
-   
-   <div align="center">
-      <img src="images/fixed_thermal_md.png" alt="step1 Image" width="600">
-   </div>
-   
-   Atom 1's KE:
-   
-   <div align="center">
-      <img src="images/atom1_0_fixed.png" alt="step1 Image" width="600">
-   </div>
-   
-   <div align="center">
-      <img src="images/atom1_512_fixed.png" alt="step1 Image" width="600">
-   </div>
-   
-   <div align="center">
-      <img src="images/atom1_999_fixed.png" alt="step1 Image" width="600">
-   
+## **Challenges and Key Learnings**
+### **1. Initial Visualization Attempt**
+We successfully simulated molecular movement to model thermal equilibrium but encountered difficulties implementing color changes using the `.xyz` file format. The resulting visualization lacked the intended color differentiation.  
+
+<div align="center">
+  <img src="images/step1_no_color_change.png" alt="Visualization without Color Change" width="300">
+</div>
 
 ---
-### Expected Results
 
-The result we expect is a simulation that does this: atoms of different colors (red and blue, cold and warm) reach thermal equilibrium with time and change colors. We intuitively observe temperature changes in real-time, making the process of energy flow and distribution both accessible and engaging.
+### **2. Transition to `.pmd` Files**
+To address the color issue, we pivoted to using `.pmd` files and explored appropriate coloring methods. However, we discovered that kinetic energy values were not being properly read by the simulation.  
+
+<div align="center">
+  <img src="images/beta_column_not_read.png" alt="Kinetic Energy Values Not Read" width="600">
+</div>
+
+---
+
+### **3. File Formatting Issues**
+We identified that our `.pdb` file formatting did not align with the `.tcl` script. Correcting the file format enabled the simulation to properly read kinetic energy values.  
+
+<div align="center">
+  <img src="images/beta_column_read.png" alt="Corrected File Reading Kinetic Energy" width="600">
+</div>
+
+---
+
+### **4. Resolving Position vs. Kinetic Energy Updates**
+While we fixed the file formatting, we noticed that the script only updated atom positions, not their kinetic energy. Below is an example of Atom 1’s position changing over time while its kinetic energy remained constant.  
+
+<div align="center">
+  <img src="images/colored_atoms.png" alt="Colored Atoms Without KE Change" width="600">
+  <img src="images/atom1_0.png" alt="Atom 1 at Timestep 0" width="600">
+  <img src="images/atom1_512.png" alt="Atom 1 at Timestep 512" width="600">
+  <img src="images/atom1_999.png" alt="Atom 1 at Timestep 999" width="600">
+</div>
+
+---
+
+### **5. Final Fixes**
+We modified the `thermal_d.c` file to correctly generate an `output.xyz` file where the kinetic energy of atoms changes over time. Additionally, we added an `exchange_energy` function to the `thermal_md` script, addressing energy exchange dynamics. Below is Atom 1’s kinetic energy across timesteps, reflecting the expected changes.  
+
+<div align="center">
+  <img src="images/fixed_thermal_md.png" alt="Modified Script with Energy Exchange" width="600">
+  <img src="images/atom1_0_fixed.png" alt="Atom 1 at Timestep 0 (Fixed)" width="600">
+  <img src="images/atom1_512_fixed.png" alt="Atom 1 at Timestep 512 (Fixed)" width="600">
+  <img src="images/atom1_999_fixed.png" alt="Atom 1 at Timestep 999 (Fixed)" width="600">
+</div>
+
+**Updated Visualization:**  
+Below is the resulting simulation, showcasing kinetic energy changes over time.  
+
+<div align="center">
+  <video src="images/video2.mp4" width="320" height="240" controls></video>
+</div>
+
+---
+
+## **Expected Results**
+Our final goal is a simulation where molecules with distinct temperatures (represented by colors such as red and blue) exchange energy and reach thermal equilibrium over time. The visualization will clearly demonstrate temperature changes through real-time color updates, making the process of energy flow and distribution both engaging and easy to understand.
