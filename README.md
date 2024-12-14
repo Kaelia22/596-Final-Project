@@ -65,20 +65,13 @@ We modified the `thermal_d.c` file to correctly generate an `output.xyz` file wh
   <img src="images/atom1_999_fixed.png" alt="Atom 1 at Timestep 999 (Fixed)" width="600">
 </div>
 
-**Updated Visualization:**  
-Below is the resulting simulation, showcasing kinetic energy changes over time.  
-
-<div align="center">
-  <video src="images/video2.mp4" width="320" height="240" controls></video>
-</div>
-
 ---
 
 ## **Latest Update**
 Despite generating the correct output file where kinetic energy values change over time, the color changes are still not reflected in the VMD visualization. The atom colors remain static throughout the simulation, failing to dynamically update as intended.  
 
 <div align="center">
-  <video src="images/video2.mp4" width="320" height="240" controls></video>
+  <img src="images/video2.gif" alt="Simulation Video" width="320">
 </div>
 
 ---
