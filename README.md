@@ -71,10 +71,16 @@ We modified the `thermal_d.c` file to correctly generate an `output.xyz` file wh
 Despite generating the correct output file where kinetic energy values change over time, the color changes are still not reflected in the VMD visualization. The atom colors remain static throughout the simulation, failing to dynamically update as intended.  
 
 <div align="center">
-  <img src="images/video2.gif" alt="Simulation Video" width="320">
+  <img src="images/video2.gif" alt="Simulation Video" width="600">
 </div>
 
 ---
 
 ## **Expected Results**
 Our final goal is a simulation where molecules with distinct temperatures (represented by colors such as red and blue) exchange energy and reach thermal equilibrium over time. The visualization will clearly demonstrate temperature changes through real-time color updates, making the process of energy flow and distribution both engaging and easy to understand.
+
+---
+
+## **Contributors**
+Kaelia Okamura
+Kriti Shukla
