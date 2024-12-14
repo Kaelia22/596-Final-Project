@@ -41,12 +41,25 @@ Our project leverages VMD visualization software to simulate thermal equilibrium
    <div align="center">
       <img src="images/atom1_999.png" alt="step1 Image" width="600">
    </div>
+5. Fixed thermal_d.c to generate output.xyz where KE of atoms is changing. The colors in VMD, however, are still not changing.
+   <div align="center">
+      <img src="images/fixed_thermal_md.png" alt="step1 Image" width="600">
+   </div>
+   Atom 1's KE:
+   
+   <div align="center">
+      <img src="images/atom1_0_fixed.png" alt="step1 Image" width="600">
+   </div>
+   
+   <div align="center">
+      <img src="images/atom1_512_fixed.png" alt="step1 Image" width="600">
+   </div>
+   
+   <div align="center">
+      <img src="images/atom1_999_fixed.png" alt="step1 Image" width="600">
+   
 
 ---
 ### Expected Results
 
 The result we expect is a simulation that does this: atoms of different colors (red and blue, cold and warm) reach thermal equilibrium with time and change colors. We intuitively observe temperature changes in real-time, making the process of energy flow and distribution both accessible and engaging.
-
-
----
-### References
