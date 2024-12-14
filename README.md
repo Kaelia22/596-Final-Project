@@ -42,9 +42,13 @@ Our project leverages VMD visualization software to simulate thermal equilibrium
       <img src="images/atom1_999.png" alt="step1 Image" width="600">
    </div>
 5. Fixed thermal_d.c to generate output.xyz where KE of atoms is changing. The colors in VMD, however, are still not changing.
+
+   Added exchange_energy function to thermal_md:
+   
    <div align="center">
       <img src="images/fixed_thermal_md.png" alt="step1 Image" width="600">
    </div>
+   
    Atom 1's KE:
    
    <div align="center">
