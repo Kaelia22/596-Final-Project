@@ -83,4 +83,5 @@ Our final goal is a simulation where molecules with distinct temperatures (repre
 
 ## **Contributors**
 Kaelia Okamura
+
 Kriti Shukla
