@@ -56,7 +56,7 @@ While we fixed the file formatting, we noticed that the script only updated atom
 ---
 
 ### **5. Final Fixes**
-We modified the `thermal_d.c` file to correctly generate an `output.xyz` file where the kinetic energy of atoms changes over time. Additionally, we added an `exchange_energy` function to the `thermal_md` script, addressing energy exchange dynamics. Below is Atom 1’s kinetic energy across timesteps, reflecting the expected changes.  
+We modified the `thermal_d.c` file to correctly generate an `output.xyz` file where the kinetic energy of atoms changes over time. To accomplish this, we added an `exchange_energy` function to the `thermal_md` script, addressing energy exchange dynamics. Below is Atom 1’s kinetic energy across timesteps, reflecting the expected changes.  
 
 <div align="center">
   <img src="images/fixed_thermal_md.png" alt="Modified Script with Energy Exchange" width="600">
@@ -67,6 +67,15 @@ We modified the `thermal_d.c` file to correctly generate an `output.xyz` file wh
 
 **Updated Visualization:**  
 Below is the resulting simulation, showcasing kinetic energy changes over time.  
+
+<div align="center">
+  <video src="images/video2.mp4" width="320" height="240" controls></video>
+</div>
+
+---
+
+## **Latest Update**
+Despite generating the correct output file where kinetic energy values change over time, the color changes are still not reflected in the VMD visualization. The atom colors remain static throughout the simulation, failing to dynamically update as intended.  
 
 <div align="center">
   <video src="images/video2.mp4" width="320" height="240" controls></video>
