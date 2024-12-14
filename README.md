@@ -15,6 +15,22 @@ Our project utilizes VMD (Visual Molecular Dynamics) software to simulate and vi
 
 ---
 
+### Steps to Create and Visualize the Simulation
+
+#### **Creating the PDB File**
+1. Compile the thermal simulation program:
+   ```bash
+   gcc -o thermal_md thermal_md.c
+2. Run `./thermal_md`. This will create `output.pdb`
+
+#### **Loading the PDB File into VMD** 
+1. Open VMD and navigate to Extensions → TK Console.
+2. Run `source /path/to/userb.tcl` to load the newly created output.pdb file.
+3. 3. In Graphics --> Represenations, choose Coloring Method = Beta and Drawing Method = VDW
+4. Press the play button to run the simulation.
+
+---
+
 ## **Challenges and Key Learnings**
 ### **1. Initial Visualization Attempt**
 We successfully simulated molecular movement to model thermal equilibrium but encountered difficulties implementing color changes using the `.xyz` file format. The resulting visualization lacked the intended color differentiation.  
