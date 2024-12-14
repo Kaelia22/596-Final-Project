@@ -26,7 +26,7 @@ Our project utilizes VMD (Visual Molecular Dynamics) software to simulate and vi
 #### **Loading the PDB File into VMD** 
 1. Open VMD and navigate to Extensions → TK Console.
 2. Run `source /path/to/userb.tcl` to load the newly created output.pdb file.
-3. 3. In Graphics → Represenations, choose Coloring Method = Beta and Drawing Method = VDW
+3. In Graphics → Represenations, choose Coloring Method = Beta and Drawing Method = VDW
 4. Press the play button to run the simulation.
 
 ---
